@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:habit/auth/widgettree.dart';
 import 'package:habit/firebase_options.dart';
+import 'package:habit/screens/splash.dart';
 import 'package:habit/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Habit Tracker',
-      home: const WidgetTREEE(),
+      home: const Splash(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
