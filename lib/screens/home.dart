@@ -18,13 +18,10 @@ class Home extends StatelessWidget {
       ),
       drawer: Drawer(
         child: CupertinoSwitch(
-
           value: Provider.of<ThemeProvider>(context).isDarkMode,
           onChanged: (value) {
             Provider.of<ThemeProvider>(context,listen: false).toggleTheme();
           },
-
-        
         ),
     ),
     );

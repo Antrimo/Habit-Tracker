@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:habit/firebase_options.dart';
 import 'package:habit/screens/home.dart';
 import 'package:habit/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  ); // Initialize Firebase
+
   runApp(
-    ChangeNotifierProvider(create: (context) => ThemeProvider(),
+    ChangeNotifierProvider(
+      create: (context) => ThemeProvider(),
       child: const MyApp(),
     ),
   );
@@ -19,7 +27,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Habit Tracker',
-  
       home: const Home(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
