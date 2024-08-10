@@ -10,10 +10,10 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Habit Tracker'),
+        title: const Center(child: Text('Habit Tracker')),
       ),
       body: const Center(
-        child: Text('Home'),
+        child: Text('Habit Tracker App Persist Ventures'),
         
       ),
       drawer: Drawer(

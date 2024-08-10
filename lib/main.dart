@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:habit/auth/widgettree.dart';
 import 'package:habit/firebase_options.dart';
 import 'package:habit/screens/splash.dart';
 import 'package:habit/theme/theme_provider.dart';
