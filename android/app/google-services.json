@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:173608730656:android:ba391ca072fe3e64a93c45",
         "android_client_info": {
-          "package_name": "com.habit.app"
+          "package_name": "com.example.habit"
         }
       },
       "oauth_client": [],
