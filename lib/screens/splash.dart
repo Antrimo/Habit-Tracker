@@ -34,7 +34,7 @@ class _SplashState extends State<Splash> {
               ),
             ),
             const Text(
-              "ONEAPE",
+              "Persist Ventures",
               style: TextStyle(
                   fontSize: 26,
                   color: Colors.white,
